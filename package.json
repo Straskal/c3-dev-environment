@@ -8,10 +8,14 @@
   "bin": {
     "c3": "development/bin/index.js"
   },
+  "scripts": {
+    "dev-server": "start http://localhost:8080 & http-server ./addons --cors"
+  },
   "dependencies": {
     "camelcase": "^5.0.0",
     "commander": "^2.18.0",
     "fs-extra": "^7.0.0",
+    "http-server": "^0.11.1",
     "inquirer": "^6.2.0",
     "replace-in-file": "^3.4.2"
   }

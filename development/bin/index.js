@@ -5,7 +5,7 @@ const createAddon = require('../lib/create-addon');
 
 program
     .command('create')
-    .action(function() 
+    .action(() =>
     {
         createAddon();
     });
