@@ -1,0 +1,19 @@
+{
+  "name": "construct-cli",
+  "version": "1.0.0",
+  "author": "Straskal",
+  "license": "MIT",
+  "description": "developer environment for construct 3",
+  "preferGlobal": true,
+  "bin": {
+    "c3": "development/bin/index.js"
+  },
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "colors": "^1.3.2",
+    "commander": "^2.18.0",
+    "fs-extra": "^7.0.0",
+    "inquirer": "^6.2.0",
+    "replace-in-file": "^3.4.2"
+  }
+}
