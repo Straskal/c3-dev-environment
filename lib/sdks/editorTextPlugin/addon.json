@@ -14,7 +14,6 @@
 						"instance.js"
 					],
 	"file-list": [
-		"c2runtime/runtime.js",
 		"c3runtime/plugin.js",
 		"c3runtime/type.js",
 		"c3runtime/instance.js",

@@ -5,7 +5,7 @@
   "license": "MIT",
   "description": "developer environment for construct 3",
   "scripts": {
-    "new-addon": "node ./lib/create-addon.js",
+    "create-addon": "node ./lib/create-addon.js",
     "export-addon": "node ./lib/export-addon.js",
     "dev-server": "start http://localhost:8080 & http-server ./addons --cors -c-1"
   },
