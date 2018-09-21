@@ -11,6 +11,3 @@ Create a new addon with all boilerplate changes\
 Generate a .c3addon file\
 `npm run dev-server`\
 Run a local cors enabled web server for testing addons
-
-## Getting started
-TODO
