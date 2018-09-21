@@ -54,8 +54,6 @@ Easily generate .c3addon files
 1. Open terminal and run the `npm run export` command
 2. Follow instructions to choose an addon
 
-![alt text](https://github.com/Straskal/c3-dev-environment-images/blob/master/export.PNG "C3 testing")
+![alt text](https://github.com/Straskal/c3-dev-environment-images/blob/master/better%20export.PNG "C3 testing")
 
 3. .c3addon file is generated and added to your project
-
-![alt text](https://github.com/Straskal/c3-dev-environment-images/blob/master/export-proj-view.PNG "C3 testing")
