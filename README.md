@@ -34,6 +34,10 @@ Your company name, addon id, description and more are automatically added to all
 ## Testing an addon
 Easily start up a web server to host your addon files.
 
+Make sure to check out the Construct 3 docs on enabling dev mode and testing addons:
+https://www.construct.net/make-games/manuals/addon-sdk/guide/enabling-developer-mode
+
+
 1. Open terminal and run the `npm run dev-server` command
 2. Your default browser will open to the file server
 3. Copy your addons url to the addon.json
