@@ -10,4 +10,4 @@ Create a new addon with all boilerplate changes\
 `npm run export`\
 Generate a .c3addon file\
 `npm run dev-server`\
-Run a local cors enabled web server to host your addons for testing addons
+Run a local cors enabled web server to host your addons for testing
