@@ -5,9 +5,9 @@ Requires both Node js and npm to be installed on your machine.
 https://nodejs.org/en/
 
 ## Provides the following commands
-`npm run create`\
+`npm run create`
 Create a new addon with all boilerplate changes\
-`npm run export`\
+`npm run export`
 Generate a .c3addon file\
-`npm run dev-server`\
+`npm run dev-server`
 Run a local cors enabled web server to host your addons for testing
