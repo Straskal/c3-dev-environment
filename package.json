@@ -4,11 +4,8 @@
   "author": "Straskal",
   "license": "MIT",
   "description": "developer environment for construct 3",
-  "preferGlobal": true,
-  "bin": {
-    "c3": "development/bin/index.js"
-  },
   "scripts": {
+    "new-addon": "node ./development/index.js",
     "dev-server": "start http://localhost:8080 & http-server ./addons --cors"
   },
   "dependencies": {
