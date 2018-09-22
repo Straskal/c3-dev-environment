@@ -52,6 +52,41 @@ const addonFileInfoObjects = {
                 ]
             }
         }
+    },
+    singleGlobalPlugin: {
+        sdk: './internal/sdks/singleGlobalPlugin',
+        getFileReplaceOptions() {
+            let files = getFiles(this);
+            return {
+                files: files,
+                from: [
+                    /MyCompany_SingleGlobal/g,
+                    /mycompany_singleglobal/g,
+                    /SingleGlobalPlugin/g,
+                    /SingleGlobal/g,
+                    /MyCustomPlugin/g,
+                    /My custom plugin/g,
+                    /Example custom Construct 3 plugin./g,
+                    /Scirra/g,
+                    /_CATEGORY = "general"/g,
+                    /An example third-party plugin./g,
+                    `SetIs${this.pcAddonName}`,
+                ],
+                to: [
+                    this.addonId,
+                    this.addonId.toLowerCase(),
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.name,
+                    this.description,
+                    this.author,
+                    `_CATEGORY = "${this.category}"`,
+                    this.description,
+                    'SetIsSingleGlobal',
+                ]
+            }
+        }
     }
 };
 
