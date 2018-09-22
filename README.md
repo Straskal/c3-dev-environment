@@ -31,7 +31,8 @@ When you are ready to share your addon with the world, you can generate your *.c
 
 ## Testing an addon
 Be sure to check out the Construct 3 docs on enabling dev mode and testing addons: \
-https://www.construct.net/make-games/manuals/addon-sdk/guide/enabling-developer-mode
+https://www.construct.net/make-games/manuals/addon-sdk/guide/enabling-developer-mode \
+https://www.construct.net/make-games/manuals/addon-sdk/guide/using-developer-mode
 
 
 1. Run the `npm run test` command
