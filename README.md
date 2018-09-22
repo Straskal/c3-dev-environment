@@ -30,7 +30,7 @@ When you are ready to share your addon with the world, you can generate your *.c
 3. .c3addon file is generated and added to your *./exports* folder
 
 ## Testing an addon
-Be sure to check out the Construct 3 docs on enabling dev mode and testing addons:
+Be sure to check out the Construct 3 docs on enabling dev mode and testing addons: \
 https://www.construct.net/make-games/manuals/addon-sdk/guide/enabling-developer-mode
 
 
