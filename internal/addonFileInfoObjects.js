@@ -125,6 +125,40 @@ const addonFileInfoObjects = {
             }
         }
     },
+    drawingPlugin: {
+        sdk: './internal/sdks/drawingPlugin',
+        getFileReplaceOptions() {
+            return {
+                files: getFiles(this),
+                from: [
+                    /MyCompany_DrawingPlugin/g,
+                    /mycompany_drawingplugin/g,
+                    /MyDrawingPlugin/g,
+                    /MyDrawing/g,
+                    /DrawingPlugin/g,
+                    /Drawing/g,
+                    /My drawing plugin/g,
+                    /Example custom drawing Construct 3 plugin./g,
+                    /Scirra/g,
+                    /_CATEGORY = "general"/g,
+                    /Testing a custom drawing third-party plugin./g,
+                ],
+                to: [
+                    this.addonId,
+                    this.addonId.toLowerCase(),
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.name,
+                    this.description,
+                    this.author,
+                    `_CATEGORY = "${this.category}"`,
+                    this.description
+                ]
+            }
+        }
+    }
 };
 
 module.exports.getAddonFileInfo = function (addonInfo) {
