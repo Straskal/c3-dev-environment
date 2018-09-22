@@ -4,8 +4,6 @@ const path = require('path');
 const fsExtra = require('fs-extra');
 var zipFolder = require('zip-folder');
 
-const { addonTypes } = require('./constants');
-
 if (fs.existsSync('./addons')) {
     fs.readdir(`./addons`, (err, items) => {
         const files = [];
