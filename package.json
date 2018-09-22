@@ -5,9 +5,9 @@
   "license": "MIT",
   "description": "developer environment for construct 3",
   "scripts": {
-    "create": "node ./lib/create-addon.js",
-    "export": "node ./lib/export-addon.js",
-    "dev-server": "start http://localhost:8080 & http-server ./addons --cors -c-1"
+    "create": "node ./internal/create.js",
+    "export": "node ./internal/export.js",
+    "test": "start http://localhost:8080 & http-server ./addons --cors -c-1"
   },
   "dependencies": {
     "camelcase": "^5.0.0",
