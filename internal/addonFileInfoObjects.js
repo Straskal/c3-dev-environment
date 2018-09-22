@@ -83,11 +83,48 @@ const addonFileInfoObjects = {
                     this.author,
                     `_CATEGORY = "${this.category}"`,
                     this.description,
-                    'SetIsSingleGlobal',
+                    'SetIsSingleGlobal'
                 ]
             }
         }
-    }
+    },
+    customImporterPlugin: {
+        sdk: './internal/sdks/customImporterPlugin',
+        getFileReplaceOptions() {
+            let files = getFiles(this);
+            return {
+                files: files,
+                from: [
+                    /MyCompany_CustomImporter/g,
+                    /mycompany_customimporter/g,
+                    /CustomImportPlugin/g,
+                    /MyCustomImporterPlugin/g,
+                    /CustomImporterPlugin/g,
+                    /MyCustomImporter/g,
+                    /CustomImporter/g,
+                    /My custom importer plugin/g,
+                    /Example custom Construct 3 plugin using Custom Importer API./g,
+                    /Scirra/g,
+                    /_CATEGORY = "general"/g,
+                    /An example third-party plugin demonstrating the Custom Importer API./g,
+                ],
+                to: [
+                    this.addonId,
+                    this.addonId.toLowerCase(),
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.name,
+                    this.description,
+                    this.author,
+                    `_CATEGORY = "${this.category}"`,
+                    this.description
+                ]
+            }
+        }
+    },
 };
 
 module.exports.getAddonFileInfo = function (addonInfo) {
