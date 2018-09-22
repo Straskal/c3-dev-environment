@@ -158,6 +158,36 @@ const addonFileInfoObjects = {
                 ]
             }
         }
+    },
+    editorTextPlugin: {
+        sdk: './internal/sdks/editorTextPlugin',
+        getFileReplaceOptions() {
+            return {
+                files: getFiles(this),
+                from: [
+                    /MyCompany_TextPlugin/g,
+                    /mycompany_textplugin/g,
+                    /MyTextPlugin/g,
+                    /MyText/g,
+                    /My text plugin/g,
+                    /Example custom text drawing Construct 3 plugin./g,
+                    /Scirra/g,
+                    /_CATEGORY = "general"/g,
+                    /Testing a custom text drawing third-party plugin./g,
+                ],
+                to: [
+                    this.addonId,
+                    this.addonId.toLowerCase(),
+                    this.pcAddonName,
+                    this.pcAddonName,
+                    this.name,
+                    this.description,
+                    this.author,
+                    `_CATEGORY = "${this.category}"`,
+                    this.description
+                ]
+            }
+        }
     }
 };
 
