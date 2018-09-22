@@ -20,7 +20,7 @@ Addon file generation takes care of all of the boilerplate changes for you. ie c
 
 1. run the `npm run create` command
 2. follow the instructions in the terminal
-3. your new addon will automatically be added to your *./addons* folder.
+3. your new addon is generated and added to your *./addons* folder.
 
 ## Exporting an addon
 When you are ready to share your addon with the world, you can generate your *.c3addon* file with a command!
