@@ -11,7 +11,7 @@ Create a new addon with all boilerplate changes
 `npm run export`
 Generate a .c3addon file
 
-`npm run dev-server`
+`npm run test`
 Run a local cors enabled web server to host your addons for testing
 
 ## Getting started
@@ -38,7 +38,7 @@ Make sure to check out the Construct 3 docs on enabling dev mode and testing add
 https://www.construct.net/make-games/manuals/addon-sdk/guide/enabling-developer-mode
 
 
-1. Open terminal and run the `npm run dev-server` command
+1. Open terminal and run the `npm run test` command
 2. Your default browser will open to the file server
 3. Copy your addons url to the addon.json
 
