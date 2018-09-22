@@ -36,11 +36,4 @@ https://www.construct.net/make-games/manuals/addon-sdk/guide/enabling-developer-
 
 1. Run the `npm run test` command
 2. Your default browser will open to the file server
-3. Copy your addons' addon.json url into construct
-4. Test dat sh*t!
-
-![alt text](https://github.com/Straskal/c3-dev-environment-images/blob/master/addon.PNG "Server")
-
-4. Paste the addon.json url into Construct 3 and test!
-
-![alt text](https://github.com/Straskal/c3-dev-environment-images/blob/master/c3addon.PNG "C3 testing")
+3. Copy your addons' addon.json url into construct 3 and test!
