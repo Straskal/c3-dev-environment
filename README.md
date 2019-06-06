@@ -1,4 +1,6 @@
 # c3-dev-environment
+*No longer being maintained*
+
 A development environment for Construct 3 *(c3 runtime only)*.
 
 Requires Node js \
