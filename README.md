@@ -1,5 +1,5 @@
 # c3-dev-environment
-*No longer being maintained*
+*No longer being maintained. See https://github.com/Straskal/c3addons*
 
 A development environment for Construct 3 *(c3 runtime only)*.
 
