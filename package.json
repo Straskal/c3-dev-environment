@@ -5,16 +5,13 @@
   "license": "MIT",
   "description": "developer environment for construct 3",
   "scripts": {
-    "create": "node ./internal/create.js",
-    "export": "node ./internal/export.js",
+    "export": "node ./scripts/export.js",
     "test": "start http://localhost:8080 & http-server ./addons --cors -c-1"
   },
   "dependencies": {
-    "camelcase": "^5.0.0",
-    "fs-extra": "^7.0.0",
+    "fs-extra": "^7.0.1",
     "http-server": "^0.11.1",
-    "inquirer": "^6.2.0",
-    "replace-in-file": "^3.4.2",
+    "inquirer": "^6.5.2",
     "zip-folder": "^1.0.0"
   }
 }
